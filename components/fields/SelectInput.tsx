@@ -60,7 +60,7 @@ export function SelectInput({
           `}
         >
           <option value="" disabled className="text-slate-400">
-            {placeholder || "Select an option..."}
+            {placeholder || `Select ${label.toLowerCase()}`}
           </option>
           {options.map((opt) => (
             <option key={opt.value} value={opt.value} className="text-[#121C2A] py-1">

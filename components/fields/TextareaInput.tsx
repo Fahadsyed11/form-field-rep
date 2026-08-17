@@ -52,7 +52,7 @@ export function TextareaInput({
         onChange={(e) => onChange(e.target.value)}
         onBlur={onBlur}
         disabled={disabled}
-        placeholder={placeholder}
+        placeholder={placeholder || `Enter ${label.toLowerCase()}`}
         rows={4}
         maxLength={maxLength}
         minLength={validation?.minLength}

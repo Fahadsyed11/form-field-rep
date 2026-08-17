@@ -69,7 +69,7 @@ export function TextInput({
           onChange={handleChange}
           onBlur={onBlur}
           disabled={disabled}
-          placeholder={placeholder || (type === "date" ? "YYYY-MM-DD" : undefined)}
+          placeholder={placeholder || (type === "date" ? "Select a date" : `Enter ${label.toLowerCase()}`)}
           min={validation?.min}
           max={validation?.max}
           minLength={validation?.minLength}
